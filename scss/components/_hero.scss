@@ -1,0 +1,66 @@
+.hero {
+    font-family: Inter;
+    margin-top: 70px;
+
+    &__img {
+        padding-left: 20px;
+        max-width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+
+        h1 {
+            color: #000;
+            font-size: 60px;
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 19px;
+            max-width: 354px$ git --version;
+
+            img {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        h2 {
+            color: var(--700, #4A5568);
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero {
+        &__content {
+            justify-content: center;
+        }
+
+        &__info {
+            text-align: center;
+            max-width: 100%;
+
+            h1 {
+                img {
+                    left: 40%;
+                    top: -90px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .hero {
+        img {
+            max-width: 100%;
+        }
+    }
+}
